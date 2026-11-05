@@ -9,7 +9,7 @@ README = ROOT / "README.md"
 
 setup(
     name="to-postgresql",
-    version="0.1.0",
+    version="0.2.0",
     description="Simple pandas DataFrame loader for PostgreSQL.",
     url="https://github.com/IvanBibanin/to_postgresql",
     long_description=README.read_text(encoding="utf-8"),
@@ -17,8 +17,8 @@ setup(
     py_modules=["to_postgresql"],
     python_requires=">=3.9",
     install_requires=[
-        "pandas>=1.5",
-        "psycopg2-binary>=2.9",
-        "SQLAlchemy>=1.4",
+        "pandas>=1.5,<3",
+        "psycopg2-binary>=2.9,<3",
+        "SQLAlchemy>=2.0,<2.1",
     ],
 )
